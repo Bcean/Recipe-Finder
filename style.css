@@ -11,7 +11,7 @@ body {
   justify-content: center;
 }
 
-main {
+#greetingContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@ h1 {
   font-size: 2rem;
 }
 
-button {
+#findRecipieBtn {
   font-family: inherit;
   width: 50%;
   border-radius: 10px;
@@ -36,7 +36,7 @@ button {
   box-shadow: inset 3px 3px #813e5e;
 }
 
-button:hover {
+#findRecipieBtn:hover {
   filter: brightness(0.8);
   cursor: pointer;
 }
