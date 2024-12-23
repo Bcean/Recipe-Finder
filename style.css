@@ -24,7 +24,7 @@ h1 {
   font-size: 2rem;
 }
 
-#findRecipieBtn {
+#findrecipeBtn {
   font-family: inherit;
   width: 50%;
   border-radius: 10px;
@@ -37,7 +37,7 @@ h1 {
   transition: filter 0.12s ease-in-out 0.12s;
 }
 
-#findRecipieBtn:hover {
+#findrecipeBtn:hover {
   filter: brightness(0.8);
   cursor: pointer;
 }
@@ -47,7 +47,7 @@ h1 {
     font-size: 5rem;
   }
 
-  #findRecipieBtn {
+  #findrecipeBtn {
     font-size: 4.5rem;
     box-shadow: inset 10px 10px #813e5e;
   }
