@@ -15,7 +15,7 @@ mealTitleElement.textContent = recipieName;
 mealImgElement.src = `${recipieImgUrl}`;
 
 recipieBtn.addEventListener("click", () => {
-  window.location.href = `${recipieSrc}`;
+  window.open(`${recipieSrc}`, "_blank");
 });
 console.log(recipieName);
 console.log(recipieSrc);

@@ -18,19 +18,15 @@ findRecipieBtn.addEventListener("click", () => {
       return response.json();
     })
     .then((data) => {
-      //localStorage.setItem("mealName", data.meals[0].strMeal)
-
-      console.log(data); //store meal data
-      //title
-      console.log(data.meals[0].strMeal);
-      localStorage.setItem("meal name", data.meals[0].strMeal);
-      //link
-      console.log(data.meals[0].strSource);
-      localStorage.setItem("recipie source", data.meals[0].strSource);
-
-      console.log(data.meals[0].strMealThumb);
-      localStorage.setItem("recipieImgUrl", data.meals[0].strMealThumb);
-      window.location.href = "recipie.html";
+      if (data.meals[0].strSource == null || data.meals[0].strSource == "") {
+        //because for some reason there was one recipie with no source link :/
+        alert("oops something went wrong please try again");
+      } else {
+        localStorage.setItem("meal name", data.meals[0].strMeal);
+        localStorage.setItem("recipie source", data.meals[0].strSource);
+        localStorage.setItem("recipieImgUrl", data.meals[0].strMealThumb);
+        window.location.href = "recipie.html";
+      }
     })
     .catch((error) => {
       console.error(`Theres been an error ${error}`);
