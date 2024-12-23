@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #recipieCardContainer {
@@ -21,6 +22,7 @@ body {
   width: 30%;
 }
 h1 {
+  margin-top: 0;
   font-weight: 100;
   font-size: 2rem;
   margin-bottom: 1%;
@@ -53,6 +55,7 @@ p {
   color: white;
   padding: 2px;
   box-shadow: 2px 2px #813e5e;
+  transition: filter 0.12s ease-in-out 0.12s;
 }
 
 button:hover {
@@ -70,4 +73,36 @@ button:hover {
   color: white;
   padding: 2px;
   box-shadow: 2px 2px #39764c;
+  transition: filter 0.12s ease-in-out 0.12s;
+}
+
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3.25rem;
+  }
+
+  #recipieImgContainer img {
+    width: 300px;
+    height: 300px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  #dropDownBtn {
+    width: 40px;
+    height: 40px;
+    box-shadow: 5px 5px #813e5e;
+  }
+
+  #restartBtn {
+    width: 40px;
+    height: 40px;
+    box-shadow: 5px 5px #39764c;
+  }
 }
