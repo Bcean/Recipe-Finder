@@ -34,15 +34,15 @@ h3 {
   margin-bottom: 2%;
 }
 #recipieImgContainer img {
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
   border-radius: 10px;
   background-color: white;
   object-fit: cover;
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 #dropDownBtn {
